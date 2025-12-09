@@ -1,0 +1,78 @@
+openapi: 3.0.4
+info:
+  title: Birthstones
+  description: Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/birthstones:
+    get:
+      summary: Get Birthstone by Month
+      description: Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
+      operationId: birthstones
+      parameters:
+      - name: month
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The month number (1-12) or name (january, february, etc.)
+        example: '5'
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  month: 5
+                  monthName: May
+                  primaryStone: Emerald
+                  alternateStones:
+                  - Chrysoprase
+                  - Agate
+                  color: Green
+                  meaning: Rebirth, love, fertility
+                  zodiacSigns:
+                  - Taurus
+                  - Gemini
+                  hardness: 7.5
+                  mineralFamily: Beryl
+                  anniversaryYear: 55
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
