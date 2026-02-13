@@ -1,32 +1,36 @@
 openapi: 3.0.4
 info:
   title: Birthstones
-  description: Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
+  description: >-
+    Birthstones is a comprehensive lookup API for birthstone information. It
+    returns detailed data about gemstones associated with each birth month,
+    including the primary stone, alternate stones, colors, meanings, and zodiac
+    associations.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
     email: hello@apiverve.com
     url: https://apiverve.com/contact
-  version: 1.0.9
+  version: 1.0.0
 externalDocs:
   description: Learn more about APIVerve
   url: https://docs.apiverve.com?utm_source=openapi
 servers:
-- url: https://api.apiverve.com/
+  - url: https://api.apiverve.com/
 paths:
   /v1/birthstones:
     get:
       summary: Get Birthstone by Month
-      description: Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
+      description: Get birthstone information for a specific month
       operationId: birthstones
       parameters:
-      - name: month
-        in: query
-        schema:
-          type: string
-        required: true
-        description: The month number (1-12) or name (january, february, etc.)
-        example: '5'
+        - name: month
+          in: query
+          schema:
+            type: string
+          required: true
+          description: The month number (1-12) or name
+          example: '5'
       responses:
         '200':
           description: Successful Response
@@ -42,23 +46,23 @@ paths:
                     type: string
                     description: error
                   data:
-                    type: string
+                    type: object
                     description: data
               example:
                 status: ok
-                error: 
+                error: null
                 data:
                   month: 5
                   monthName: May
                   primaryStone: Emerald
                   alternateStones:
-                  - Chrysoprase
-                  - Agate
+                    - Chrysoprase
+                    - Agate
                   color: Green
                   meaning: Rebirth, love, fertility
                   zodiacSigns:
-                  - Taurus
-                  - Gemini
+                    - Taurus
+                    - Gemini
                   hardness: 7.5
                   mineralFamily: Beryl
                   anniversaryYear: 55
@@ -67,7 +71,7 @@ paths:
         '404':
           description: Requested resource was not found
         '500':
-          description: A server error has occured, try again later
+          description: A server error has occurred, try again later
 components:
   securitySchemes:
     api_key:
@@ -75,4 +79,4 @@ components:
       name: x-api-key
       in: header
 security:
-- api_key: []
+  - api_key: []
