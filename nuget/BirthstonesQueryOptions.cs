@@ -11,8 +11,7 @@ namespace APIVerve.API.Birthstones
     public class BirthstonesQueryOptions
     {
         /// <summary>
-        /// The month number (1-12) or name (january, february, etc.)
-        /// Example: 5
+        /// The month number (1-12) or name
         /// </summary>
         [JsonProperty("month")]
         public string Month { get; set; }
