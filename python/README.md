@@ -231,8 +231,9 @@ from apiverve_birthstones.apiClient import BirthstonesAPIClient
 
 api = BirthstonesAPIClient("[YOUR_API_KEY]")
 
+query = { "month": "5" }
+
 try:
-    query = { "month": "5" }
     result = api.execute(query)
     print(result)
 finally:
