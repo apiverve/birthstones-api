@@ -191,11 +191,43 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the Birthstones API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "month": 5,
+    "monthName": "May",
+    "primaryStone": "Emerald",
+    "alternateStones": [
+      "Chrysoprase",
+      "Agate"
+    ],
+    "color": "Green",
+    "meaning": "Rebirth, love, fertility",
+    "zodiacSigns": [
+      "Taurus",
+      "Gemini"
+    ],
+    "hardness": 7.5,
+    "mineralFamily": "Beryl",
+    "anniversaryYear": 55
+  }
 }
 ```
 
