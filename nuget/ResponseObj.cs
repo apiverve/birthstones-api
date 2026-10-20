@@ -32,6 +32,15 @@ namespace APIVerve.API.Birthstones
 
     public partial class Data
     {
+        [JsonProperty("count")]
+        public long? Count { get; set; }
+
+        [JsonProperty("birthstones")]
+        public Birthstone[] Birthstones { get; set; }
+    }
+
+    public partial class Birthstone
+    {
         [JsonProperty("month")]
         public long? Month { get; set; }
 

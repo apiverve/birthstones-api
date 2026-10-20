@@ -3,11 +3,10 @@ Birthstones API
 
 Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a .NET Wrapper for the [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=nuget&utm_medium=readme)
+[![NuGet version](https://img.shields.io/nuget/v/APIVerve.API.Birthstones.svg)](https://www.nuget.org/packages/APIVerve.API.Birthstones)
+
+This is a .NET wrapper for the [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -40,8 +39,8 @@ From within Visual Studio:
 
 ## Configuration
 
-Before using the birthstones API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=readme)
+Before using the Birthstones API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=nuget&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -61,8 +60,8 @@ class Program
         var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new BirthstonesQueryOptions {
-    Month = "5"
-};
+            Month = "5"
+        };
 
         // Make the API call
         try
@@ -92,7 +91,7 @@ class Program
 
 ## Usage
 
-The Birthstones API documentation is found here: [https://docs.apiverve.com/ref/birthstones](https://docs.apiverve.com/ref/birthstones?utm_source=nuget&utm_medium=readme).
+The Birthstones API documentation is found here: [https://docs.apiverve.com/ref/birthstones](https://docs.apiverve.com/ref/birthstones?utm_source=nuget&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -125,8 +124,8 @@ public class Example
         var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new BirthstonesQueryOptions {
-    Month = "5"
-};
+            Month = "5"
+        };
 
         var response = await apiClient.ExecuteAsync(queryOptions);
 
@@ -157,8 +156,8 @@ public class Example
         var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new BirthstonesQueryOptions {
-    Month = "5"
-};
+            Month = "5"
+        };
 
         var response = apiClient.Execute(queryOptions);
 
@@ -194,8 +193,8 @@ public class Example
         var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]");
 
         var queryOptions = new BirthstonesQueryOptions {
-    Month = "5"
-};
+            Month = "5"
+        };
 
         try
         {
@@ -250,8 +249,8 @@ public class Example
         apiClient.SetRetryDelay(2000);     // Wait 2 seconds between retries
 
         var queryOptions = new BirthstonesQueryOptions {
-    Month = "5"
-};
+            Month = "5"
+        };
 
         try
         {
@@ -367,22 +366,27 @@ using (var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]"))
   "status": "ok",
   "error": null,
   "data": {
-    "month": 5,
-    "monthName": "May",
-    "primaryStone": "Emerald",
-    "alternateStones": [
-      "Chrysoprase",
-      "Agate"
-    ],
-    "color": "Green",
-    "meaning": "Rebirth, love, fertility",
-    "zodiacSigns": [
-      "Taurus",
-      "Gemini"
-    ],
-    "hardness": 7.5,
-    "mineralFamily": "Beryl",
-    "anniversaryYear": 55
+    "count": 1,
+    "birthstones": [
+      {
+        "month": 5,
+        "monthName": "May",
+        "primaryStone": "Emerald",
+        "alternateStones": [
+          "Chrysoprase",
+          "Agate"
+        ],
+        "color": "Green",
+        "meaning": "Rebirth, love, fertility",
+        "zodiacSigns": [
+          "Taurus",
+          "Gemini"
+        ],
+        "hardness": 7.5,
+        "mineralFamily": "Beryl",
+        "anniversaryYear": 55
+      }
+    ]
   }
 }
 ```
@@ -391,7 +395,7 @@ using (var apiClient = new BirthstonesAPIClient("[YOUR_API_KEY]"))
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=nuget&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -402,12 +406,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=nuget&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
