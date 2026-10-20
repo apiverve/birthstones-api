@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/birthstones",
-  "version": "1.2.0",
+  "version": "1.2.2",
   "description": "Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.",
   "main": "index.js",
   "types": "index.d.ts",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/birthstones-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/birthstones?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/birthstones?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",

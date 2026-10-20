@@ -25,6 +25,11 @@ declare module '@apiverve/birthstones' {
 
 
   interface BirthstonesData {
+      count:       number | null;
+      birthstones: Birthstone[];
+  }
+  
+  interface Birthstone {
       month:           number | null;
       monthName:       null | string;
       primaryStone:    null | string;
