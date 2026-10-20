@@ -1,13 +1,13 @@
-# [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
 Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.
 
 The Birthstones API provides a simple, reliable way to integrate birthstones functionality into your applications. Built for developers who need production-ready birthstones capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/birthstones-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/birthstones](https://docs.apiverve.com/ref/birthstones)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -211,22 +211,27 @@ A real response from the Birthstones API:
   "status": "ok",
   "error": null,
   "data": {
-    "month": 5,
-    "monthName": "May",
-    "primaryStone": "Emerald",
-    "alternateStones": [
-      "Chrysoprase",
-      "Agate"
-    ],
-    "color": "Green",
-    "meaning": "Rebirth, love, fertility",
-    "zodiacSigns": [
-      "Taurus",
-      "Gemini"
-    ],
-    "hardness": 7.5,
-    "mineralFamily": "Beryl",
-    "anniversaryYear": 55
+    "count": 1,
+    "birthstones": [
+      {
+        "month": 5,
+        "monthName": "May",
+        "primaryStone": "Emerald",
+        "alternateStones": [
+          "Chrysoprase",
+          "Agate"
+        ],
+        "color": "Green",
+        "meaning": "Rebirth, love, fertility",
+        "zodiacSigns": [
+          "Taurus",
+          "Gemini"
+        ],
+        "hardness": 7.5,
+        "mineralFamily": "Beryl",
+        "anniversaryYear": 55
+      }
+    ]
   }
 }
 ```
@@ -235,7 +240,7 @@ A real response from the Birthstones API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

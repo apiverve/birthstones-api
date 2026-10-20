@@ -20,7 +20,7 @@ servers:
 paths:
   /v1/birthstones:
     get:
-      summary: Get Birthstone by Month
+      summary: Birthstones
       description: Get birthstone information for a specific month
       operationId: birthstones
       parameters:
@@ -52,20 +52,22 @@ paths:
                 status: ok
                 error: null
                 data:
-                  month: 5
-                  monthName: May
-                  primaryStone: Emerald
-                  alternateStones:
-                    - Chrysoprase
-                    - Agate
-                  color: Green
-                  meaning: Rebirth, love, fertility
-                  zodiacSigns:
-                    - Taurus
-                    - Gemini
-                  hardness: 7.5
-                  mineralFamily: Beryl
-                  anniversaryYear: 55
+                  count: 1
+                  birthstones:
+                    - month: 5
+                      monthName: May
+                      primaryStone: Emerald
+                      alternateStones:
+                        - Chrysoprase
+                        - Agate
+                      color: Green
+                      meaning: Rebirth, love, fertility
+                      zodiacSigns:
+                        - Taurus
+                        - Gemini
+                      hardness: 7.5
+                      mineralFamily: Beryl
+                      anniversaryYear: 55
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
