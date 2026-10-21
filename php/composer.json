@@ -1,7 +1,7 @@
 {
     "name": "apiverve/birthstones",
     "description": "Birthstones is a comprehensive lookup API for birthstone information. It returns detailed data about gemstones associated with each birth month, including the primary stone, alternate stones, colors, meanings, and zodiac associations.",
-    "version": "1.2.0",
+    "version": "1.2.2",
     "type": "library",
     "license": "MIT",
     "authors": [
@@ -21,7 +21,7 @@
         "zodiac",
         "jewelry"
     ],
-    "homepage": "https://apiverve.com/marketplace/birthstones?utm_source=php&utm_medium=homepage",
+    "homepage": "https://apiverve.com/marketplace/birthstones?utm_source=php&utm_medium=referral&utm_content=homepage",
     "support": {
         "email": "hello@apiverve.com",
         "docs": "https://docs.apiverve.com/ref/birthstones",
