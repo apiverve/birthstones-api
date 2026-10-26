@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// Birthstones API client.
 ///
-/// For more information, visit: https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [month] (required) - The month number (1-12) or name

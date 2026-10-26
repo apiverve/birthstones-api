@@ -5,7 +5,7 @@ Birthstones is a comprehensive lookup API for birthstone information. It returns
 [![pub package](https://img.shields.io/pub/v/apiverve_birthstones.svg)](https://pub.dev/packages/apiverve_birthstones)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This is the Dart/Flutter client for the [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=readme).
+This is the Dart/Flutter client for the [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## Installation
 
@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_birthstones: ^1.1.14
+  apiverve_birthstones: ^1.2.3
 ```
 
 Then run:
@@ -52,34 +52,39 @@ void main() async {
   "status": "ok",
   "error": null,
   "data": {
-    "month": 5,
-    "monthName": "May",
-    "primaryStone": "Emerald",
-    "alternateStones": [
-      "Chrysoprase",
-      "Agate"
-    ],
-    "color": "Green",
-    "meaning": "Rebirth, love, fertility",
-    "zodiacSigns": [
-      "Taurus",
-      "Gemini"
-    ],
-    "hardness": 7.5,
-    "mineralFamily": "Beryl",
-    "anniversaryYear": 55
+    "count": 1,
+    "birthstones": [
+      {
+        "month": 5,
+        "monthName": "May",
+        "primaryStone": "Emerald",
+        "alternateStones": [
+          "Chrysoprase",
+          "Agate"
+        ],
+        "color": "Green",
+        "meaning": "Rebirth, love, fertility",
+        "zodiacSigns": [
+          "Taurus",
+          "Gemini"
+        ],
+        "hardness": 7.5,
+        "mineralFamily": "Beryl",
+        "anniversaryYear": 55
+      }
+    ]
   }
 }
 ```
 
 ## API Reference
 
-- **API Home:** [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=readme)
-- **Documentation:** [docs.apiverve.com/ref/birthstones](https://docs.apiverve.com/ref/birthstones?utm_source=dart&utm_medium=readme)
+- **API Home:** [Birthstones API](https://apiverve.com/marketplace/birthstones?utm_source=dart&utm_medium=referral&utm_content=readme)
+- **Documentation:** [docs.apiverve.com/ref/birthstones](https://docs.apiverve.com/ref/birthstones?utm_source=dart&utm_medium=referral&utm_content=readme)
 
 ## Authentication
 
-All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=readme).
+All requests require an API key. Get yours at [apiverve.com](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme).
 
 ## License
 
@@ -87,4 +92,4 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ---
 
-Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=readme)
+Built with Dart for [APIVerve](https://apiverve.com?utm_source=dart&utm_medium=referral&utm_content=readme)
