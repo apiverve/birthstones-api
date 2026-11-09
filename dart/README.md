@@ -13,7 +13,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  apiverve_birthstones: ^1.2.4
+  apiverve_birthstones: ^1.2.5
 ```
 
 Then run:
